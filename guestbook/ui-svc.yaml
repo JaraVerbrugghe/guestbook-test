@@ -5,7 +5,7 @@ metadata:
   namespace: demo
 spec:
   ports:
-  - port: 88
-    targetPort: 88
+  - port: 80
+    targetPort: 80
   selector:
     app: guestbook-ui
