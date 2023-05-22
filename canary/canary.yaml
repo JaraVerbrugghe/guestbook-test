@@ -16,7 +16,6 @@ spec:
   progressDeadlineSeconds: 60
   service:
     port: 9898
-    targetPort: 9898
   analysis:
     interval: 10s
     threshold: 10
