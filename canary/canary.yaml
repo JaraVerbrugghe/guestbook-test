@@ -15,7 +15,7 @@ spec:
     name: podinfo
   progressDeadlineSeconds: 60
   service:
-    port: 80
+    port: 9898
     targetPort: 9898
   analysis:
     interval: 10s
