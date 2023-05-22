@@ -13,9 +13,14 @@ spec:
     apiVersion: networking.k8s.io/v1
     kind: Ingress
     name: podinfo
+  autoscalerRef:
+    apiVersion: autoscaling/v2beta2
+    kind: HorizontalPodAutoscaler
+    name: podinfo
   progressDeadlineSeconds: 60
   service:
-    port: 9898
+    port: 80
+    targetPort: 9898
   analysis:
     interval: 10s
     threshold: 10
